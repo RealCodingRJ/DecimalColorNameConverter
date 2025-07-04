@@ -6,6 +6,17 @@ def main():
 
     with open("main.color.io", 'w') as f:
 
+        if color.get_r() == 255 and color.get_g() == 235 and color.get_b() == 238:
+
+
+            f.write(f"Hex: {reddish()}\n")
+            f.write("Redish Pink")
+
+        if color.get_r() == 255 and color.get_g() == 0 and color.get_b() == 0:
+
+            f.write(f"Hex: {red()}\n")
+            f.write("Red")
+
         if color.get_r() == 255 and color.get_b() == 255 and color.get_g() == 255:
             f.write(f"Hex: {white()}\n")
             f.write("White")

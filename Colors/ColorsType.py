@@ -3,14 +3,25 @@ from abc import *
 
 T = TypeVar('T')
 
+
+def red():
+    return "ff0000"
+
+
+def reddish():
+    return "#ffebee"
+
 def black():
     return "000000"
+
 
 def white():
     return "ffffff"
 
+
 def lightgrey():
     return "fefefe"
+
 
 
 class Type(Generic[T]):
@@ -24,7 +35,6 @@ class Type(Generic[T]):
         return self.r
 
     def get_g(self):
-
         return self.g
 
     def get_b(self):
