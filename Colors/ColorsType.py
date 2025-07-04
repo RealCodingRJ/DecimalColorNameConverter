@@ -1,6 +1,12 @@
 from typing import TypeVar, Generic
+from abc import *
 
 T = TypeVar('T')
+
+
+def white():
+    return "ffffff"
+
 
 class Type(Generic[T]):
 
@@ -13,6 +19,7 @@ class Type(Generic[T]):
         return self.r
 
     def get_g(self):
+
         return self.g
 
     def get_b(self):
