@@ -3,9 +3,14 @@ from abc import *
 
 T = TypeVar('T')
 
+def black():
+    return "000000"
 
 def white():
     return "ffffff"
+
+def lightgrey():
+    return "fefefe"
 
 
 class Type(Generic[T]):

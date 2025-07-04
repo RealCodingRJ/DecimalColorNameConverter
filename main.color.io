@@ -1,2 +1,2 @@
-Hex: ffffff
-White R: 255 G: 255 B: 255
+Hex: 000000
+Black R: 0 G: 0 B: 0

@@ -2,18 +2,21 @@ from Colors.ColorsType import *
 
 def main():
 
-    color = Type(255, 255, 255)
+    color = Type(0, 0, 0)
 
     with open("main.color.io", 'w') as f:
 
-        if color.get_r() and color.get_b() and color.get_g()  == 255:
+        if color.get_r() == 255 and color.get_b() == 255 and color.get_g() == 255:
             f.write(f"Hex: {white()}\n")
             f.write("White")
 
-        elif color.get_r() and color.get_b() and color.get_g() == 254:
+        if color.get_r() == 254 and color.get_b() == 254 and color.get_g() == 254:
+            f.write(f"Hex: {lightgrey()}\n")
             f.write("Light Grey")
 
-        elif color.get_r() and color.get_g() and color.get_b() == 0:
+
+        if color.get_r() == 0 and color.get_b() == 0 and color.get_g() == 0:
+            f.write(f"Hex: {black()}\n")
             f.write("Black")
 
         f.write(f" R: {color.get_r()}")
